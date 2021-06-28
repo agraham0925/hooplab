@@ -1,0 +1,24 @@
+$wrapper_gutter:45px;
+$wrapper_small:35px;
+$wrapper_tiny:25px;
+
+.wrapper{
+	margin:0 auto;
+	padding:0;
+	max-width: $max__width;
+	@media screen and (max-width: $max__width_plus) {
+		max-width: none;
+		padding:0 $wrapper_gutter;
+	}
+	@media screen and (max-width: 489px) {
+		padding:0 $wrapper_small;
+	}
+	@media screen and (max-width: 389px) {
+		padding:0 $wrapper_tiny;
+	}
+}
+.maxWrapper{
+	max-width: $max__width_total;
+	margin:0 auto;
+	position: relative;
+}
